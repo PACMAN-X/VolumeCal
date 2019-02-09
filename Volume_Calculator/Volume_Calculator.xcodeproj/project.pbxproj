@@ -15,6 +15,12 @@
 		B118EB932201ED47000B1293 /* NewUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B118EB912201ED47000B1293 /* NewUserViewController.xib */; };
 		B118EB952201F240000B1293 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B118EB942201F240000B1293 /* Images.xcassets */; };
 		B118EB972201F9B9000B1293 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B118EB962201F9B9000B1293 /* User.swift */; };
+		B18C408F220F306B0054963C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C408D220F306B0054963C /* MainViewController.swift */; };
+		B18C4090220F306B0054963C /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B18C408E220F306B0054963C /* MainViewController.xib */; };
+		B18C4094220F31B90054963C /* LoginRoutesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C4092220F31B90054963C /* LoginRoutesViewController.swift */; };
+		B18C4095220F31B90054963C /* LoginRoutesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B18C4093220F31B90054963C /* LoginRoutesViewController.xib */; };
+		B1945FF1220EBA4600FCD3F2 /* HeightAndWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1945FEF220EBA4600FCD3F2 /* HeightAndWeightViewController.swift */; };
+		B1945FF2220EBA4600FCD3F2 /* HeightAndWeightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1945FF0220EBA4600FCD3F2 /* HeightAndWeightViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		B118EB912201ED47000B1293 /* NewUserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewUserViewController.xib; sourceTree = "<group>"; };
 		B118EB942201F240000B1293 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B118EB962201F9B9000B1293 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B18C408D220F306B0054963C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B18C408E220F306B0054963C /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		B18C4092220F31B90054963C /* LoginRoutesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRoutesViewController.swift; sourceTree = "<group>"; };
+		B18C4093220F31B90054963C /* LoginRoutesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginRoutesViewController.xib; sourceTree = "<group>"; };
+		B1945FEF220EBA4600FCD3F2 /* HeightAndWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightAndWeightViewController.swift; sourceTree = "<group>"; };
+		B1945FF0220EBA4600FCD3F2 /* HeightAndWeightViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeightAndWeightViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +85,9 @@
 		B118EB8F2201E36A000B1293 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				B118EB8B2201E359000B1293 /* LoginViewController.swift */,
-				B118EB8C2201E359000B1293 /* LoginViewController.xib */,
-				B118EB902201ED47000B1293 /* NewUserViewController.swift */,
-				B118EB912201ED47000B1293 /* NewUserViewController.xib */,
+				B18C4091220F30740054963C /* InitialConnect */,
+				B18C408D220F306B0054963C /* MainViewController.swift */,
+				B18C408E220F306B0054963C /* MainViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -87,6 +98,21 @@
 				B118EB962201F9B9000B1293 /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		B18C4091220F30740054963C /* InitialConnect */ = {
+			isa = PBXGroup;
+			children = (
+				B118EB8B2201E359000B1293 /* LoginViewController.swift */,
+				B118EB8C2201E359000B1293 /* LoginViewController.xib */,
+				B118EB902201ED47000B1293 /* NewUserViewController.swift */,
+				B118EB912201ED47000B1293 /* NewUserViewController.xib */,
+				B1945FEF220EBA4600FCD3F2 /* HeightAndWeightViewController.swift */,
+				B1945FF0220EBA4600FCD3F2 /* HeightAndWeightViewController.xib */,
+				B18C4092220F31B90054963C /* LoginRoutesViewController.swift */,
+				B18C4093220F31B90054963C /* LoginRoutesViewController.xib */,
+			);
+			path = InitialConnect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +174,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B118EB842201E32C000B1293 /* LaunchScreen.storyboard in Resources */,
+				B18C4090220F306B0054963C /* MainViewController.xib in Resources */,
+				B1945FF2220EBA4600FCD3F2 /* HeightAndWeightViewController.xib in Resources */,
+				B18C4095220F31B90054963C /* LoginRoutesViewController.xib in Resources */,
 				B118EB952201F240000B1293 /* Images.xcassets in Resources */,
 				B118EB932201ED47000B1293 /* NewUserViewController.xib in Resources */,
 				B118EB8E2201E359000B1293 /* LoginViewController.xib in Resources */,
@@ -162,9 +191,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B118EB972201F9B9000B1293 /* User.swift in Sources */,
+				B18C4094220F31B90054963C /* LoginRoutesViewController.swift in Sources */,
 				B118EB8D2201E359000B1293 /* LoginViewController.swift in Sources */,
 				B118EB922201ED47000B1293 /* NewUserViewController.swift in Sources */,
+				B18C408F220F306B0054963C /* MainViewController.swift in Sources */,
 				B118EB7A2201E32A000B1293 /* AppDelegate.swift in Sources */,
+				B1945FF1220EBA4600FCD3F2 /* HeightAndWeightViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,23 +10,20 @@ import UIKit
 
 class NewUserViewController: UIViewController {
     
-    var newUser: User?
     
     @IBAction func selectedFemale(_ sender: UIButton) {
-        if var newUser = newUser {
-            newUser.sex = false
-            print("female")
-        }
+        User.sharedInstance.sex = false
+        navigationController?.pushViewController(HeightAndWeightViewController(), animated: true)
     }
     
     @IBAction func selectedMale(_ sender: UIButton) {
-        if var newUser = newUser {
-            newUser.sex = true
-            print("male")
-        }
+        User.sharedInstance.sex = true
+        navigationController?.pushViewController(HeightAndWeightViewController(), animated: true)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
 }

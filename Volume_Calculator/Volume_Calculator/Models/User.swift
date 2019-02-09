@@ -8,11 +8,13 @@
 
 import Foundation
 
-struct User {
-    let name: String
-    var sex: Bool
-    var height: Double
-    var weight: Double
-    var birthDay: Int
+class User {
+    static let sharedInstance = User()
     
+    var name: String = ""
+    var sex: Bool = true
+    var height: Double = 0.0
+    var weight: Double = 0.0
+    
+    private init() { }
 }
